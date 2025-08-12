@@ -2,6 +2,7 @@ package com.example.UberReviewService.models;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Entity
 @Getter
@@ -10,7 +11,8 @@ import lombok.*;
 @AllArgsConstructor
 
 @Builder
-@Table(name="bookingReview")
+@Table(name="booking_review")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Review extends BaseModel {
 
     @Column(nullable = false)

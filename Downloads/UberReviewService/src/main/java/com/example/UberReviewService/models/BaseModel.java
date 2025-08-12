@@ -15,7 +15,7 @@ import java.util.Date;
 @AllArgsConstructor
 public abstract class BaseModel  {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY) //AUTOINCREMENT
+    @GeneratedValue(strategy= GenerationType.TABLE) //AUTOINCREMENT
     protected Long id;
 
     @Column(nullable = false,updatable = false)
