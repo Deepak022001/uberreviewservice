@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.web.WebProperties;
 @AllArgsConstructor
 
 @Builder
-@Table(name="booking_review")
+@Table(name="booking_Review")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Review extends BaseModel {
 
